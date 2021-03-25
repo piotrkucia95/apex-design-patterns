@@ -10,7 +10,7 @@ public with sharing class OperationStatusController {
         /* Operation starts... */
         sub.updateStatus('STARTED');
 
-        /* Operation in progres... */
+        /* Operation in progress... */
         sub.updateStatus('IN PROGRESS');
 
         /* Operation  finished... */

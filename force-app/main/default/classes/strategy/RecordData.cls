@@ -1,4 +1,4 @@
-public with sharing virtual class RecordData {
+public with sharing class RecordData {
     
     UpdateStrategy recordUpdateStrategy;
 
