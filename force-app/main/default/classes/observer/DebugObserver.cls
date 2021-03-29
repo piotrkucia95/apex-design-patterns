@@ -1,8 +1,8 @@
-public with sharing class DebugObserver implements Observer {
-    Subject sub;
+public with sharing class DebugObserver implements IObserver {
+    ISubject sub;
     String status;
 
-    public DebugObserver(Subject sub) {
+    public DebugObserver(ISubject sub) {
         this.sub = sub;
         sub.addObserver(this);
     }

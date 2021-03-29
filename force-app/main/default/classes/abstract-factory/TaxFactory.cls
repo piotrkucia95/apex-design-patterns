@@ -1,4 +1,4 @@
 public interface TaxFactory {
-    PIT createPIT();
-    VAT createVAT();
+    IPIT createPIT();
+    IVAT createVAT();
 }

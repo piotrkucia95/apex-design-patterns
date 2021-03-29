@@ -1,4 +1,4 @@
-public with sharing class UnitedStatesPIT implements PIT {
+public with sharing class UnitedStatesPIT implements IPIT {
     Decimal value = 0.17;
 
     public Decimal getValue() {

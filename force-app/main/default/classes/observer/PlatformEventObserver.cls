@@ -1,8 +1,8 @@
-public with sharing class PlatformEventObserver implements Observer {
-    Subject sub;
+public with sharing class PlatformEventObserver implements IObserver {
+    ISubject sub;
     String status;
 
-    public PlatformEventObserver(Subject sub) {
+    public PlatformEventObserver(ISubject sub) {
         this.sub = sub;
         sub.addObserver(this);
     }

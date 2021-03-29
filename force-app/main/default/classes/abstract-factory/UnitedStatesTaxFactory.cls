@@ -1,10 +1,10 @@
 public with sharing class UnitedStatesTaxFactory implements TaxFactory {
     
-    public PIT createPIT() {
+    public IPIT createPIT() {
         return new UnitedStatesPIT();
     }
 
-    public VAT createVAT() {
+    public IVAT createVAT() {
         return new UnitedStatesVAT();
     }
 }

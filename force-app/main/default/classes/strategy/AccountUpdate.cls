@@ -1,4 +1,4 @@
-public with sharing class AccountUpdate implements UpdateStrategy {
+public with sharing class AccountUpdate implements IUpdateStrategy {
     
     Account acc = new Account();
 

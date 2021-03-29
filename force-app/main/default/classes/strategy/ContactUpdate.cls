@@ -1,4 +1,4 @@
-public with sharing class ContactUpdate implements UpdateStrategy {
+public with sharing class ContactUpdate implements IUpdateStrategy {
 
     Contact con = new Contact();
 

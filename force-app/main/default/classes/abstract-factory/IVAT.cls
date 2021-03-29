@@ -1,4 +1,4 @@
-public interface VAT {
+public interface IVAT {
     Decimal getValue();
     /* Methods specific to VAT */
 }

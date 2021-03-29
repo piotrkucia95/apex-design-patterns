@@ -1,4 +1,4 @@
-public with sharing class PolandVAT implements VAT {
+public with sharing class PolandVAT implements IVAT {
     Decimal value = 0.23;
 
     public Decimal getValue() {

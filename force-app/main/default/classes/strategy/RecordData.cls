@@ -1,12 +1,12 @@
 public with sharing class RecordData {
     
-    UpdateStrategy recordUpdateStrategy;
+    IUpdateStrategy updateStrategy;
 
-    public void setUpdateStrategy(UpdateStrategy strategy) {
-        this.recordUpdateStrategy = strategy;
+    public void setUpdateStrategy(IUpdateStrategy strategy) {
+        this.updateStrategy = strategy;
     }
 
     public void runDoUpdate(Id recordId, String name1, String name2) {
-        recordUpdateStrategy.doUpdate(recordId, name1, name2);
+        updateStrategy.doUpdate(recordId, name1, name2);
     }
 }

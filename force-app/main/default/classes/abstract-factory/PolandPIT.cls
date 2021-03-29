@@ -1,4 +1,4 @@
-public with sharing class PolandPIT implements PIT {
+public with sharing class PolandPIT implements IPIT {
     Decimal value = 0.17;
 
     public Decimal getValue() {
