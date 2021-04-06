@@ -1,4 +1,4 @@
-public with sharing class PolandTaxFactory implements TaxFactory {
+public with sharing class PolandTaxFactory implements ITaxFactory {
     
     public IPIT createPIT() {
         return new PolandPIT();

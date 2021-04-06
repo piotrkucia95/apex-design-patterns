@@ -2,7 +2,7 @@ public with sharing virtual class Country {
     IPIT pitTax;
     IVAT vatTax;
 
-    public Country(TaxFactory taxesFactory) {
+    public Country(ITaxFactory taxesFactory) {
         pitTax = taxesFactory.createPIT();
         vatTax = taxesFactory.createVAT();
     }

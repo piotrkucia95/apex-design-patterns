@@ -1,11 +1,11 @@
-public with sharing class OrderCancelledStatus implements OrderStatusChain {
-    OrderStatusChain nextInChain;
+public with sharing class OrderCancelledStatus implements IOrderStatusChain {
+    IOrderStatusChain nextInChain;
 
-    public OrderCancelledStatus(OrderStatusChain nextInChain) {
+    public OrderCancelledStatus(IOrderStatusChain nextInChain) {
         this.nextInChain = nextInChain;
     }
 
-    public void setNextChain(OrderStatusChain nextInChain) {
+    public void setNextChain(IOrderStatusChain nextInChain) {
         this.nextInChain = nextInChain;
     }
 

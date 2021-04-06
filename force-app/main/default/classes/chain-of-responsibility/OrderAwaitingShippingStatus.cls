@@ -1,11 +1,11 @@
-public with sharing class OrderAwaitingShippingStatus implements OrderStatusChain {
-    OrderStatusChain nextInChain;
+public with sharing class OrderAwaitingShippingStatus implements IOrderStatusChain {
+    IOrderStatusChain nextInChain;
 
-    public OrderAwaitingShippingStatus(OrderStatusChain nextInChain) {
+    public OrderAwaitingShippingStatus(IOrderStatusChain nextInChain) {
         this.nextInChain = nextInChain;
     }
 
-    public void setNextChain(OrderStatusChain nextInChain) {
+    public void setNextChain(IOrderStatusChain nextInChain) {
         this.nextInChain = nextInChain;
     }
 

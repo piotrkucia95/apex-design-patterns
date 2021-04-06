@@ -5,7 +5,7 @@ public with sharing class OrderMessageGenerator {
         Order order2 = new Order('Sent', Date.today(), Date.today());
         Order order3 = new Order('Cancelled', Date.today(), Date.today());
 
-        OrderStatusChain chain = new OrderAwaitingShippingStatus(
+        IOrderStatusChain chain = new OrderAwaitingShippingStatus(
             new OrderSentStatus(
                 new OrderCancelledStatus(
                     new OrderDefaultStatus())));

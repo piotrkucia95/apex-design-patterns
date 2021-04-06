@@ -1,11 +1,11 @@
-public with sharing class OrderSentStatus implements OrderStatusChain {
-    OrderStatusChain nextInChain;
+public with sharing class OrderSentStatus implements IOrderStatusChain {
+    IOrderStatusChain nextInChain;
 
-    public OrderSentStatus(OrderStatusChain nextInChain) {
+    public OrderSentStatus(IOrderStatusChain nextInChain) {
         this.nextInChain = nextInChain;
     }
 
-    public void setNextChain(OrderStatusChain nextInChain) {
+    public void setNextChain(IOrderStatusChain nextInChain) {
         this.nextInChain = nextInChain;
     }
 
